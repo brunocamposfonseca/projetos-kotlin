@@ -114,7 +114,7 @@ fun CardContainer() {
                             modifier = Modifier.fillMaxWidth(),
                             contentAlignment = Alignment.Center
                         ) {
-                            BtnAdd(time = 1, score = scoreG1, onScoreChange = { scoreG1 = it })
+                            BtnAdd(time = 1, score = scoreG1) { scoreG1 += 1 }
                         }
                     }
                 }
@@ -169,10 +169,7 @@ fun CardContainer() {
                             modifier = Modifier.fillMaxWidth(),
                             contentAlignment = Alignment.Center
                         ) {
-                            BtnAdd(
-                                time = 1,
-                                score = scoreG2,
-                                onScoreChange = { scoreG2 = scoreG2 + 1 })
+                            BtnAdd(time = 2, score = scoreG2) { scoreG2 += 1 }
                         }
                     }
                 }
@@ -182,12 +179,10 @@ fun CardContainer() {
 }
 
 @Composable
-fun BtnAdd(time: Int, score: Int, onScoreChange: (Int) -> Unit) {
+fun BtnAdd(time: Int, score: Int, onTap: () -> Unit) {
     Card (
         modifier = Modifier.padding(3.dp).size(100.dp).clickable {
-            val newScore = onTap(score)
-            onScoreChange(newScore)
-
+                onTap()
                 Log.d("Time ${time}", "CreateCircle: ")
             },
         shape = CircleShape
@@ -204,11 +199,6 @@ fun BtnAdd(time: Int, score: Int, onScoreChange: (Int) -> Unit) {
         }
     }
 }
-
-fun onTap(score: Int): Int {
-    return score + 1
-}
-
 
 @Preview(showBackground = true)
 @Composable
