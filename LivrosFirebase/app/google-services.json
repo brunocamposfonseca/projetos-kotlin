@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "797470865275",
+    "project_id": "ds-senai-2k25---4",
+    "storage_bucket": "ds-senai-2k25---4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797470865275:android:e69459ca0f56388128efde",
+        "android_client_info": {
+          "package_name": "com.brunocamposfonseca.livrosfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiF_Wr0_EMjfyCKpzo0IuYuTc-e39bEcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797470865275:android:a5827a6f97e48ad428efde",
+        "android_client_info": {
+          "package_name": "com.brunocamposfonseca.tarefafirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiF_Wr0_EMjfyCKpzo0IuYuTc-e39bEcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
